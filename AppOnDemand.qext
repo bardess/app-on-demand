@@ -1,0 +1,10 @@
+{
+	"name": "AppOnDemand",
+	"description": "Creates an application on demand",
+	"icon": "table",
+	"type": "visualization",
+	"version": "1.0",
+	"preview": "table",
+	"author": "Bardess Group, Ltd.",
+	"dependencies" : { "qlik-sense" : ">=2.1.x" }
+}
