@@ -3,6 +3,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 
+//The Gallery code enables easier call outs to alteryx directly from configured JS in the extension
 Gallery = function(apiLocation, apiKey, apiSecret) {
     this.apiKey = apiKey;
     this.apiSecret = apiSecret;
