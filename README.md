@@ -7,6 +7,7 @@ Use case and description
 
 ![app-on-demand-overview](https://cloud.githubusercontent.com/assets/3495140/13952787/c9fb2e9e-f00e-11e5-977a-81081708d141.png)
 
+To see this extension in use please check out the [demos on our website](http://www.bardess.com/library/demos/app-on-demand/).  Due to the "creation" nature of this extension, an account is required on our server, and we can provide as needed.
 
 Create a parent QVF application.  This application should contain the broader set of data that you wish to utilize to drive the creation of a new application.  While a frequently use case is to use a larger, aggregated dataset to drive detailed analysis, this is not always the case.  In practical application, this extension can be utilized to drive any scenario where the application author wishes to enable creation of a new application, perhaps enhanced with advanced analytics, that is specified by selections in the parent application.
 
