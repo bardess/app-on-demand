@@ -27,6 +27,14 @@ define(["qlik", "jquery", "./properties", "util", "qvangular", "core.utils/defer
 				console.log(layout);
                 //add your rendering code here
                 $element.empty();
+                var pre = '';
+	        var post = '';
+	        if (typeof layout.preHtml !== "undefined") {
+	            pre = '<div>' + layout.preHtml + '</div>';
+	        }
+	        if (typeof layout.postHtml !== "undefined") {
+	            post = '<div style="clear: both;">' + layout.postHtml + '</div>';
+	        }
                 var html = "";
 
                 var hc = layout.qHyperCube;
@@ -74,15 +82,6 @@ define(["qlik", "jquery", "./properties", "util", "qvangular", "core.utils/defer
                     console.log("Replacements: ", repl);
                     console.log("appIDStr: " + appIDStr);
                     console.log("Constructing button...");
-
-                    var pre = '';
-                    var post = '';
-                    if (typeof layout.preHtml !== "undefined") {
-                        pre = '<div>' + layout.preHtml + '</div>';
-                    }
-                    if (typeof layout.postHtml !== "undefined") {
-                        post = '<div style="clear: both;">' + layout.postHtml + '</div>';
-                    }
 
                     html = pre + "<div><button width='auto' id='analyze_button' class='main_button' style='float: right;'>" + layout.buttonLabel + "</button></div>" + post;
                     $element.html(html);
@@ -301,7 +300,7 @@ define(["qlik", "jquery", "./properties", "util", "qvangular", "core.utils/defer
                         }); //end find button element
                     }
                 } else {
-                    html = "<div class='analyze_warning_message'>" + layout.noDataLabel + "</div>";
+                    html = pre + "<div class='analyze_warning_message'>" + layout.noDataLabel + "</div>" + post;
                     $element.html(html);
                 }
             }
