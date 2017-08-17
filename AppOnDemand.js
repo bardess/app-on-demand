@@ -77,7 +77,7 @@ define(["qlik", "jquery", "./properties", "util", "qvangular", "core.utils/defer
                             newAppSession.close();
                             var newAnalysisURI = '/sense/app/' + newAppId + '/sheet/' + layout.destinationAppSheet;
                             if (layout.jumpToNew) {
-                                window.location(newAnalysisURI);
+                                window.location.href = newAnalysisURI;
                             } else {
                                 showModal("Application Published", '<p class="dm-p">' + layout.destinationAppName + appIDStr + ' was published.<br /><a href="' + newAnalysisURI + '">Go to your analysis</a></p>');
                             }
