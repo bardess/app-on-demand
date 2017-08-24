@@ -1,4 +1,16 @@
-define(["qlik", "jquery", "./properties", "util", "qvangular", "core.utils/deferred", "client.utils/state", "client.models/rpc-session", "./scripts", "./oauth", "css!./style.css"],
+define([
+  "qlik",
+  "jquery",
+  "./properties",
+  "util",
+  "qvangular",
+  "core.utils/deferred",
+  "client.utils/state",
+  "client.models/rpc-session",
+  "./scripts",
+  "./oauth",
+  "css!./style.css"
+],
     function(qlik, $, properties, util, qvangular, Deferred, State, RPCSession) {
         'use strict';
         return {
@@ -6,6 +18,8 @@ define(["qlik", "jquery", "./properties", "util", "qvangular", "core.utils/defer
             initialProperties: {
                 qHyperCubeDef: {
                     qDimensions: [],
+                    qMeasures: [],
+                    qInterColumnSortOrder : [],
                     qInitialDataFetch: [{
                         qWidth: 2,
                         qHeight: 100
