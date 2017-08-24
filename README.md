@@ -1,6 +1,11 @@
 # Qlik Sense App-on-Demand
 
 Generates an application on demand within Qlik Sense
+Releases
+------------------------
+See the releases tab to download the correct version of this extension for your version of Qlik Sense.
+* Qlik Sense 1.0 - 3.1.5 => v1.0
+* Qlik Sense June 2017 (11.11.1) and later => v1.1
 
 Use case and description
 ------------------------
