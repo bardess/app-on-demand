@@ -6,7 +6,7 @@ define([
   "qvangular",
   "core.utils/deferred",
   "client.utils/state",
-  "client.models/rpc-session",
+  "core.models/rpc-session",
   "./scripts",
   "./oauth",
   "css!./style.css"
